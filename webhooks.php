@@ -111,7 +111,8 @@ if (!is_null($events['events'])) {
   }
 };
 			
-			$post = json_encode($data2);
+			$post = $data2;
+			//$post = json_encode($data2);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
